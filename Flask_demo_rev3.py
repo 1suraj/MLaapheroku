@@ -12,7 +12,7 @@ app = Flask(__name__)
 
 my_RFmodel= pickle.load(open('RFmodel.pkl','rb'))
 SC= pickle.load(open('SC_X.pkl','rb'))
-
+'''
 @app.route('/api1', methods=['POST'])
 def make_predict():
     
@@ -42,7 +42,7 @@ def make_predict():
     #return test
     return jsonify(prediction)
     #return jsonify(results =a)
-
+'''
 @app.route('/')
 def hello_world():
     return 'Deployment Successful1!'
