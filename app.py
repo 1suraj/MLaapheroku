@@ -17,7 +17,7 @@ SC= pickle.load(open('SC_X.pkl','rb'))
 def make_predict():
     
     # This Cn be requested through 
-    '''
+    
     import requests, json
     url = 'http://localhost:5000/api1'
     data = json.dumps({'Age':'42','Salary':'50000'})
@@ -25,7 +25,7 @@ def make_predict():
 
     print(r.text)
     
-    '''
+    
     data = request.get_json(force=True)
     Age = data['Age']
     Salary = data['Salary']
