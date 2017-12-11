@@ -1,1 +1,1 @@
-web: gunicorn'Flask_demo_rev3:aap'--log-file=-
+web: gunicorn 'Flask_demo_rev3:aap'--log-file=-
