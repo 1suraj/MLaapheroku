@@ -45,7 +45,7 @@ def make_predict():
 
 @app.route('/')
 def hello_world():
-    return 'Deployment Successful1!'
+    return 'I love you Deepika'
 '''
 @app.route('/api', methods=['POST'])
 def hello_world1():
