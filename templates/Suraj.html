@@ -1,0 +1,34 @@
+<html>
+
+	<head>
+		<script>
+			function textboxValidation() 
+			{
+				var val = document.getElementByName('txt1')[0].Value;
+				
+				if(val.length > 10)
+				{
+					document.getElementByName('txt1').style.color = red;
+				}
+				else
+				{
+					document.getElementByName('txt1').style.color = green;
+				}
+			}
+		</script>
+  
+        <h1>Live Sentiment Checker</h1>
+        <p> by Suraj Nayak.</p>
+	</head>
+
+	<body>
+        <form method="POST">
+            <input name="text"size="100" >
+            <br>
+            <br>
+            <input type="submit" value="Check Sentiment" >
+        </form>
+        
+        <h3>This Sentense is : {{ value }}<h3>
+	</body>
+</html>
